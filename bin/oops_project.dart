@@ -77,16 +77,16 @@
 
 import 'dart:io';
 
-class Book {
-  Book({required this.name, required this.author, this.discount});
+// class Book {
+//   Book({required this.name, required this.author, this.discount});
 
-  Book.fify({required this.name, required this.author}) {
-    this.discount = 50;
-  }
-  String name;
-  String author;
-  double? discount;
-}
+//   Book.fify({required this.name, required this.author}) {
+//     this.discount = 50;
+//   }
+//   String name;
+//   String author;
+//   double? discount;
+// }
 
 // 📝 Practice Question:
 // Create a Dart program where the user can add multiple books by entering
@@ -140,10 +140,10 @@ void main() {
   //     print("${book.name} by ${book.author} (${book.discount})");
   //   }
 
-  Book book1 = Book(name: "name", author: "author", discount: 30);
-  Book book2 = Book.fify(author: "author", name: " name");
-  Book book3 = Book.fify(author: "author", name: " name");
-  print(book1.discount);
-  print(book2.discount);
-  print(book3.discount);
+  // Book book1 = Book(name: "name", author: "author", discount: 30);
+  // Book book2 = Book.fify(author: "author", name: " name");
+  // Book book3 = Book.fify(author: "author", name: " name");
+  // print(book1.discount);
+  // print(book2.discount);
+  // print(book3.discount);
 }

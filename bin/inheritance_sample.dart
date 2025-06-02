@@ -70,11 +70,12 @@ import 'dart:async';
 class Employee {
   String name;
   double salary;
-  Employee({required this.name, required this.salary});
+  String place;
+  Employee({required this.name, required this.salary, required this.place});
 }
 
 class Developer extends Employee {
-  Developer({required super.name, required super.salary});
+  Developer({required super.name, required super.salary, required super.place});
 
   void printDetails() {
     print("$name and $salary");
@@ -82,6 +83,6 @@ class Developer extends Employee {
 }
 
 void main(List<String> args) {
-  Developer d = Developer(name: "shiahb", salary: 5678);
+  Developer d = Developer(name: "shiahb", salary: 5678, place: "ernakulam");
   d.printDetails();
 }
